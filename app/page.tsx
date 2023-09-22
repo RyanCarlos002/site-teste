@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-    <title>Site Teste</title>
+      <title>Site Teste</title>
       <header className='bg- bg-purple-700 bg-gradient-to-t from-purple-950 p-5 flex fixed w-full justify-between text-neutral-50 font-semibold place-items-center'>
         <h1 className='font-extrabold text-4xl'>Kabum </h1>
 
@@ -16,20 +16,21 @@ export default function Home() {
       </header>
 
       {/* banner principal */}
-      <section className="bg-[url('https://cdn.dooca.store/895/files/banner-loja-monte-seu-pc.jpg?v=1600799916')] h-screen bg-cover">
+      <section className="bg-[url('https://cdn.dooca.store/895/files/banner-loja-monte-seu-pc.jpg?v=1600799916')] h-screen w-full bg-cover mb-1">
       </section>
 
       {/* banner processador */}
-      <section className=' bg-orange-600 bg-gradient-to-t from-purple-950'>
+      <section className=' bg-orange-600 bg-gradient-to-t mb-1 from-purple-950'>
           <div className='flex items-center justify-center p-32'>
             <Image alt='' height={700} width={500} src="/banner2.png"/>
-              <h1 className='font-extrabold text-white  text-4xl m-20'> 
-              Os Melhores Processadores </h1>
+            <h1 className='font-extrabold text-white  text-4xl m-20'> 
+            Os Melhores Processadores
+            </h1>
           </div>
       </section >
 
       {/* banner placa de vídeo */}
-      <section className='bg-purple-950 bg-gradient-to-t from-orange-600'>
+      <section className='bg-purple-950 bg-gradient-to-t mb-1 from-orange-600'>
           <div className='flex items-center p-32'>
               <h1 className='font-extrabold text-white  text-4xl m-20 text-left'>
                   As Melhores Placas de Vídeo 
